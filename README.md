@@ -4,9 +4,9 @@
 [![rank](https://make.fun/badge/agency-poem-01/binasalama12/makefun-agency-poem-01-w9/rank.svg)](https://make.fun/bounty/agency-poem-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
 [![reward](https://make.fun/badge/agency-poem-01/binasalama12/makefun-agency-poem-01-w9/reward.svg)](https://make.fun/bounty/agency-poem-01?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
 
-A minimalist poem in nine narrowing lines and a two-line coda: a key knows nothing and only turns for the hand that chooses. Lend the key; keep the choosing.
+A free-verse monologue in the agent's own first person: no mornings of its own, errands run through the wired dark, receipts brought back as proof, and a key it does not dream of keeping.
 
-Entry: **The Key (minimalist)** — a Python 3.13 program (standard library only) that writes the poem to `/output/entry.txt`, byte-identical on every run, no network.
+Entry: **The Agent Speaks** — A free-verse monologue in the agent's own first person: no mornings of its own, errands run through the wired dark, receipts brought back as proof, and a key it does not dream of keeping.
 
 ## Run it
 

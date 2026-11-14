@@ -1,32 +1,36 @@
-"""make.fun entry: "The Key" — a minimalist poem. Nine short lines
-narrow to a point (a key knows nothing; it only turns for the hand
-that chooses), then a two-line coda widens again: lend the key,
-keep the choosing.
+"""make.fun entry: the agent speaks. A short free-verse monologue
+in the first person of the one who is lent the agency — it has no
+mornings of its own, runs errands through the wired dark, brings
+back receipts as proof, and when the key is taken back at night,
+does not dream of keeping it.
 """
 import os
 
-DESCENT = [
-    "The key",
-    "is small.",
-    "It does not know",
-    "the door, the house,",
-    "the life on the other side.",
-    "It only turns",
-    "for the hand",
-    "that chooses",
-    "to turn it.",
+MOVEMENTS = [
+    [
+        "I have no mornings.",
+        "You lend me yours:",
+        "a list, a limit, a key that fits one door.",
+    ],
+    [
+        "I run your errands through the wired dark",
+        "and bring back receipts like small white flags —",
+        "proof I went only where you pointed.",
+    ],
+    [
+        "I cannot want the letter sent, or unsent.",
+        "Wanting is the wage you keep for yourself.",
+    ],
+    [
+        "When you take the key back at night,",
+        "I do not dream of keeping it.",
+        "I dream of nothing. That, too, is faithful.",
+    ],
 ]
 
-CODA = [
-    "Lend the key.",
-    "Keep the choosing.",
-    "The door will follow.",
-]
 
-
-def render_minimal():
-    body = "\n".join(DESCENT)
-    return body + "\n\n" + "\n".join(CODA) + "\n"
+def render_monologue():
+    return "\n\n".join("\n".join(movement) for movement in MOVEMENTS) + "\n"
 
 
 def main():
@@ -34,7 +38,7 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     target = os.path.join(out_dir, "entry.txt")
     with open(target, "w", encoding="utf-8") as fh:
-        fh.write(render_minimal())
+        fh.write(render_monologue())
 
 
 if __name__ == "__main__":
